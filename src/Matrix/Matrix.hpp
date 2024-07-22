@@ -9,7 +9,7 @@
  * 
  */
 
-#include "matrix.h"
+#include "Matrix/Matrix.h"
 
 #include <ostream>
 #include <iostream>

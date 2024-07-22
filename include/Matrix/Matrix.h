@@ -1,17 +1,17 @@
 /**
- * @file matrix.h
- * @author your name (you@domain.com)
- * @brief 
+ * @file Matrix.h
+ * @author Riley Horrix (horrixriley@gmail.com)
+ * @brief Definition of matrix class
  * @version 0.1
- * @date 2024-07-21
+ * @date 2024-07-22
  * 
- * @copyright Copyright (c) 2024
+ * Copyright (c) Riley Horrix 2024
  * 
  */
 
 #pragma once
 
-#include "matrix_rep.h"
+#include "MatrixRep.h"
 
 #include <ostream>
 #include <iostream>
@@ -83,4 +83,4 @@ using Vec2 = Matrix<1, 2, D>;
 
 /** Include implementations */
 
-#include "../src/matrix.hpp"
+#include "../../src/Matrix/Matrix.hpp"
