@@ -1,12 +1,12 @@
 all:
-	mkdir -p build;\
+	@ mkdir -p build;\
 	cd build;\
 	cmake ..;\
 	make;\
 	cd ..
 
 test:
-	pushd build;\
+	@ pushd build;\
 	make;\
 	ctest --output-on-failure;\
 	popd
