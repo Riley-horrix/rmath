@@ -14,15 +14,30 @@
 
 using namespace rmath;
 
-TEST_CASE("MatrixReps are created and can be indexed correctly", "[MatrixRep]") {
-  MatrixRep<1,1> a;
+TEST_CASE("MatrixReps are created and can be indexed with bracket operator", "[MatrixRep]") {
+  MatrixRep<1,1, int> a;
   REQUIRE(a(0, 0) == 0);
   
-  MatrixRep<2,1> b = 2;
-  REQUIRE(b(0, 0) == 2);
-  REQUIRE(b(1, 0) == 2);
+  MatrixRep<2,1, double> b = 2.0;
+  REQUIRE(b(0, 0) == 2.0);
+  REQUIRE(b(1, 0) == 2.0);
 
-  MatrixRep<2,2> c = {1, 2, 3, 4};
+  MatrixRep<2,2, long> c = {1, 2, 3, 4};
   REQUIRE(c(0, 0) == 1);
   REQUIRE(c(1, 1) == 4);
+
+  MatrixRep<10,10, char> d = 'h';
+  REQUIRE(d(2, 8) == 'h');
+  REQUIRE(d(7, 8) == 'h');
+  REQUIRE(d(9, 3) == 'h');
+}
+
+TEST_CASE("MatrixReps are created and can be indexed with square operator", "[MatrixRep]") {
+  MatrixRep<1,1, int> a;
+  REQUIRE(a[0][0] == 0);
+
+  MatrixRep<10,10, char> b = 'h';
+  REQUIRE(b[2][5] == 'h');
+  REQUIRE(b[7][3] == 'h');
+  REQUIRE(b[1][9] == 'h');
 }

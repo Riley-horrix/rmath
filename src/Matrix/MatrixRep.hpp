@@ -1,11 +1,11 @@
 /**
- * @file matrix_rep.hpp
- * @author your name (you@domain.com)
- * @brief 
+ * @file MatrixRep.hpp
+ * @author Riley Horrix (horrixriley@gmail.com)
+ * @brief Implementation of class MatrixRep
  * @version 0.1
- * @date 2024-07-21
+ * @date 2024-07-23
  * 
- * @copyright Copyright (c) 2024
+ * Copyright (c) Riley Horrix 2024
  * 
  */
 
