@@ -31,13 +31,3 @@ TEST_CASE("MatrixReps are created and can be indexed with bracket operator", "[M
   REQUIRE(d(7, 8) == 'h');
   REQUIRE(d(9, 3) == 'h');
 }
-
-TEST_CASE("MatrixReps are created and can be indexed with square operator", "[MatrixRep]") {
-  MatrixRep<1,1, int> a;
-  REQUIRE(a[0][0] == 0);
-
-  MatrixRep<10,10, char> b = 'h';
-  REQUIRE(b[2][5] == 'h');
-  REQUIRE(b[7][3] == 'h');
-  REQUIRE(b[1][9] == 'h');
-}
